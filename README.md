@@ -1,9 +1,9 @@
-#Description
+# Description
 
 This is a Brooklyn 99 quiz bot. Based on the episode Beach house where the squad plays "Did Captain Holt say this"
 The bot sends a quote to the server and you need to guess wether Holt said it or not.
 
-#How to play
+# How to play
 
 To start: send "start" in server
 to answer the bot question: send holt (means Holt said it) or !holt (holt didn't say it)
