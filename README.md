@@ -1,8 +1,17 @@
+#Description
+
+This is a Brooklyn 99 quiz bot. Based on the episode Beach house where the squad plays "Did Captain Holt say this"
+The bot sends a quote to the server and you need to guess wether Holt said it or not.
+
+#How to play
+
+To start: send "start" in server
+to answer the bot question: send holt (means Holt said it) or !holt (holt didn't say it)
+To end game and get score: send "peralta that's enough" (or any phrase starting with Peralta and has the word "enough" in it)
+
 # How to Build Your First Discord Bot with Node.js
 
-Michiel Mulders shows you how to install and set up a new Discord bot, which is made easier thanks to the API offered by the Discord.js package.
-
-This is the **advanced branch**, demonstrating how to implement a command handler.
+This bot was built based on the code offered by Michiel Mulders who shows you how to install and set up a new Discord bot.
 
 Link to article on SitePoint: [https://www.sitepoint.com/discord-bot-node-js/](https://www.sitepoint.com/discord-bot-node-js/)
 
@@ -11,13 +20,12 @@ Link to article on SitePoint: [https://www.sitepoint.com/discord-bot-node-js/](h
 - [Node.js](http://nodejs.org/)
 - [Discord](https://discordapp.com/) account
 
-## Installation Steps (if applicable)
+## Installation Steps
 
 1. Clone repo
 2. Run `npm install`
 3. Add Discord credentials in a `.env` file
 3. Run `node index.js`
-4. Interact with your Discord bot via your web browser
 
 ## License
 
@@ -25,7 +33,8 @@ SitePoint's code archives and code examples are licensed under the MIT license.
 
 Copyright © 2020 SitePoint
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
