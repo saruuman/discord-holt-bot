@@ -1,4 +1,4 @@
-const {getScore,clearScore,resetQuestions } = require('./variables');
+const {getScore,clearScore,resetQuestions, endGame } = require('./variables');
 module.exports = {
     name: 'peralta',
     description: 'End game and get the scores!',
@@ -11,6 +11,7 @@ module.exports = {
             })
             resetQuestions()
             clearScore()
+            endGame()
             return (
                 msg.channel.send(`Well done squad, your quiz scores are: ${scoreArray}`)
             )

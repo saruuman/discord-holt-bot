@@ -1,4 +1,5 @@
 require('dotenv').config();
+const {isGameOn}=require('./commands/variables')
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
@@ -19,6 +20,7 @@ bot.on('ready', () => {
 
 
 bot.on('message', msg => {
+  const gameOn=isGameOn()
   const args = msg.content.toLowerCase().split(/ +/);
   const command = args.shift().toLowerCase();
   console.info(`Called command: ${command}`);
@@ -26,7 +28,7 @@ bot.on('message', msg => {
   if (!bot.commands.has(command)) return;
 
   try {
-    bot.commands.get(command).execute(msg, args);
+    if (command==='start' ||gameOn) bot.commands.get(command).execute(msg, args);
   }
     catch (error) {
     console.error(error);
