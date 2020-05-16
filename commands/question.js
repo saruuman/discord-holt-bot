@@ -1,4 +1,5 @@
 const { setScore, addUser, removeQuestion, getQuestions,clearUsers, getUsers, getQuestionIsAsked, setQuestionIsAsked, getScore } = require('./variables');
+//filtering right answers and setting the scores
 filter=(response)=>{
   //check if the user is the bot
    if (response.author.id==='709751828186791966') return;

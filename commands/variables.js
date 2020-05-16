@@ -1,7 +1,10 @@
 //I put most used variables here 
 const quiz = require('../questions/questions.json');
+//score of players 
 let score={}
+//if there's a question asked (to avoid having two questions in a row before timeout)
 let questionIsAsked=false;
+//list of users who answered the question
 let users=[];
 let gameOn=false;
 resetQuiz=()=>{
