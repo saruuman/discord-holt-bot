@@ -5,6 +5,7 @@ filter=(response)=>{
    if (response.author.id==='709751828186791966') return;
    //check if a user accidentally sent "question command instead of answer"
    if (response.content==="question") return;
+  if(!['holt','!holt'].includes(response.content)) return;
    //checking if a user already answered the question
    let users=getUsers();
    if (users.includes(response.author.id)){
@@ -41,7 +42,7 @@ module.exports = {
       item = questions[index];
       removeQuestion(index);
       return (msg.channel.send(`Did holt say: ${item.question}`).then(() => {
-            msg.channel.awaitMessages(filter, { max: 100, time: 10000, errors: ['time'] })
+            msg.channel.awaitMessages(filter, { max: 100, time: 15000, errors: ['time'] })
           .then(collected => {
           })
         .catch(collected => {

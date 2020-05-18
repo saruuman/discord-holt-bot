@@ -16,10 +16,12 @@ bot.login(TOKEN);
 
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
+  console.info("channels:",bot.channels)
 });
 
 
 bot.on('message', msg => {
+  console.info(msg.channel.id)
   const gameOn=isGameOn()
   const args = msg.content.toLowerCase().split(/ +/);
   const command = args.shift().toLowerCase();
